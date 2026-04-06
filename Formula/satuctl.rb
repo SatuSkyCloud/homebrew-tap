@@ -5,21 +5,21 @@
 class Satuctl < Formula
   desc "CLI for SatuSky Cloud Platform"
   homepage "https://github.com/SatuSkyCloud/1ctl"
-  version "0.7.1"
+  version "0.7.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/satuskycloud/1ctl/releases/download/v0.7.1/1ctl-0.7.1-darwin-amd64.tar.gz"
-      sha256 "caa895ca66329a2c39c7db1366c20da56ada5ffaf965af25e8dba9a4660232d0"
+      url "https://github.com/satuskycloud/1ctl/releases/download/v0.7.2/1ctl-0.7.2-darwin-amd64.tar.gz"
+      sha256 "4815c66dfebb7c61f75224f31f64ae10e2d657cb96ef32b4fe44fb8b3d6310f5"
 
       define_method(:install) do
         bin.install "1ctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/satuskycloud/1ctl/releases/download/v0.7.1/1ctl-0.7.1-darwin-arm64.tar.gz"
-      sha256 "a111dfe8342a7b17594c0213822b1d9a815bb719b86d214ed8172c5168b78aae"
+      url "https://github.com/satuskycloud/1ctl/releases/download/v0.7.2/1ctl-0.7.2-darwin-arm64.tar.gz"
+      sha256 "c9a5ce1329768639e0dc14e1e1a23d679ad7a56ab7c9bcd155bcb8420ee12535"
 
       define_method(:install) do
         bin.install "1ctl"
@@ -29,15 +29,15 @@ class Satuctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/satuskycloud/1ctl/releases/download/v0.7.1/1ctl-0.7.1-linux-amd64.tar.gz"
-      sha256 "9edf9f4510f6d062921b5571020e468b98e339cfee2183c3bf69aee066fae8b1"
+      url "https://github.com/satuskycloud/1ctl/releases/download/v0.7.2/1ctl-0.7.2-linux-amd64.tar.gz"
+      sha256 "80eb27d3b6bf452264f88aaf9aca0e999b6e80555ea75aef8828a6151180a417"
       define_method(:install) do
         bin.install "1ctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/satuskycloud/1ctl/releases/download/v0.7.1/1ctl-0.7.1-linux-arm64.tar.gz"
-      sha256 "986e18ed7b50e212e9399b1784114df928c64a9de765182bb30da4e51c978360"
+      url "https://github.com/satuskycloud/1ctl/releases/download/v0.7.2/1ctl-0.7.2-linux-arm64.tar.gz"
+      sha256 "f705498fe1509dadd2a0edceb087324ae58feeeece97337c329fb37bd113cf91"
       define_method(:install) do
         bin.install "1ctl"
       end
