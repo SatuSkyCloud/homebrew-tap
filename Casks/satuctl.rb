@@ -33,6 +33,16 @@ cask "satuctl" do
   end
 
   binary "1ctl"
+  binary "1ctl", target: "satuctl"
+
+  # v0.16.0 is not notarized: strip the quarantine flag Homebrew sets so
+  # Gatekeeper does not block the first run. Removed by the release pipeline
+  # once Developer ID signing + notarization is configured (1ctl repo).
+  postflight do
+    if OS.mac?
+      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/1ctl"]
+    end
+  end
 
   # No zap stanza required
 
