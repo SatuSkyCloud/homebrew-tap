@@ -2,26 +2,26 @@
 cask "satuctl" do
   binary "1ctl", target: "satuctl"
 
-  version "0.18.0"
+  version "0.18.1"
 
   on_macos do
     on_intel do
-      sha256 "6c8c5a187403b50bd4cabe0389ea040727726ccf863e73e77ed941fb180c96eb"
+      sha256 "389558871ffffafd2a85a5719270c010c0eb99aed4cc88033177ea04c6d91da3"
       url "https://github.com/satuskycloud/1ctl/releases/download/v#{version}/1ctl-#{version}-darwin-amd64.tar.gz"
     end
     on_arm do
-      sha256 "d2eae6eba3bbf1941d599d09d2b95ea200782a07e202ded6bdfc6aa0dbf9b5ad"
+      sha256 "d9dcb49bdcbe1e6b8df42c61124b5cac07bd32e0e0c237c2bf1f84af608b95fe"
       url "https://github.com/satuskycloud/1ctl/releases/download/v#{version}/1ctl-#{version}-darwin-arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "5fa1a1d2ec0aa09d45ecfbb1ccb8f762dc3cec9b00fabefa7a9328768be56a7d"
+      sha256 "8b55f896599dab07688d375d2dbdf6dc2c056ebbce523907740096e9968826a5"
       url "https://github.com/satuskycloud/1ctl/releases/download/v#{version}/1ctl-#{version}-linux-amd64.tar.gz"
     end
     on_arm do
-      sha256 "57cc45074adc55ea98df67a0474148fc4e8a58d33b6c6c6a1182036afe2fd76d"
+      sha256 "9c3db3bfaf4c88286eaa058db881f667d7a43ea51a183810f7e8fa818b4c4391"
       url "https://github.com/satuskycloud/1ctl/releases/download/v#{version}/1ctl-#{version}-linux-arm64.tar.gz"
     end
   end
